@@ -26,3 +26,7 @@ Python application code - [bikeshare.py](bikeshare.py)
 ### Credits
 
 See [credits.txt](credits.txt)
+
+### Screen Capture Sample
+
+![BTC Sample Screencap](bikeshare-runtime-screencap.png)

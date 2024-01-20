@@ -555,6 +555,19 @@ def print_summary_stats(df, month, day):
     user_stats(df, day)
     print('(end of Summary Statistics)\n')
 
+def about_this_app():
+    """
+    Print information about this application.
+
+    This prints the application banner & the URL back to
+    its github repo (https://github.com/coughlin-pdsp/pdsnd_github).
+    """
+    # print('\033c'...) below should clear the terminal screen
+    # But this may not work on all platforms, so some testing
+    # and validation by others is encouraged!
+    print('\033c'+APP_INIT_BANNER)
+    print('\nTo log Issues or Contribute to this application, go to ' +
+          'https://github.com/coughlin/pdsnd_github')
 
 def main():
     """
@@ -565,7 +578,7 @@ def main():
     The only way the event loop ends normally is if the user elects to quit,
     which breaks out of this main event loop.
     """
-    print('\033c'+APP_INIT_BANNER)
+    about_this_app()
     while True:
         # Get filters from user for data query.
         print('\nPlease select which parts of the bikeshare data & ' +
